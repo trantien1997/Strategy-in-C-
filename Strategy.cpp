@@ -47,7 +47,9 @@ public:
 
 class Duck {
 protected:
-    FlyBehavior* flyBehavior; // Sử dụng con trỏ
+    // FlyBehavior là một lớp trừu tượng, không thể tạo trực tiếp một đồi tượng FlyBehavior. Thay vì khai báo trường FlyBehavior flyBehavior, nên sử
+    // dụng con trỏ hoặc tham chiếu đến FlyBehavior
+    FlyBehavior* flyBehavior;
     QuackBehavior* quackBehavior;
 
 public:
