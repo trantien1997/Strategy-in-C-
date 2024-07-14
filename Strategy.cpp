@@ -76,14 +76,13 @@ public:
 };
 
 int main() {
-    MallarDuck mallarDuck;
-    mallarDuck.performFly();
-    mallarDuck.performQuack();
-    mallarDuck.display();
+    Duck* mallarDuck = new MallarDuck();
+    mallarDuck->performFly();
+    mallarDuck->performQuack();
+    mallarDuck->display();
 
     // Giải phóng bộ nhớ (xóa con trỏ)
-    // delete mallarDuck.flyBehavior;
-    // delete mallarDuck.quackBehavior;
+    delete mallarDuck;
 
     return 0;
 }
